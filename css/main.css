@@ -515,3 +515,140 @@ footer address {
   }
 }
 
+@media (max-width: 768px) {
+  .grid-workshopuri {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ====================================
+   WORKSHOPURI - generate dinamic
+   ==================================== */
+
+.grid-workshopuri {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card-workshop {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card-workshop.complet {
+  opacity: 0.7;
+}
+
+.workshop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.badge-nivel {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.nivel-incepator {
+  background: #2a7a2a;
+}
+
+.nivel-intermediar {
+  background: #c8520a;
+}
+
+.nivel-avansat {
+  background: #1b3a6b;
+}
+
+.workshop-durata {
+  font-size: 0.9rem;
+  color: var(--text-secundar);
+}
+
+.workshop-speaker,
+.workshop-descriere,
+.workshop-meta,
+.text-locuri {
+  margin-top: 0.75rem;
+}
+
+.bara-progres {
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+
+.bara-umpluta {
+  height: 100%;
+  background: #c8520a;
+  border-radius: 3px;
+}
+
+.btn-inscriere {
+  width: 100%;
+  padding: 10px;
+  margin-top: 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-asteptare {
+  background: #6c757d;
+  color: white;
+}
+
+.card-workshop .btn-primar {
+  width: 100%;
+  text-align: center;
+}
+
+
+.card-body {
+  padding: 1rem;
+}
+
+.badge-tip {
+  display: inline-block;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+}
+
+.bio {
+  color: var(--text-secundar);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 0.75rem;
+}
+
+.link-twitter {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+#mesaj-status {
+  margin-top: 1rem;
+}
+
+[aria-invalid="true"] {
+  border-color: #dc3545 !important;
+}
